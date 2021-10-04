@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Birthstone&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --beige : #e8b28c5e;
+    --dark-pink: #D7A6BC;
+    --cyan : #a4dbefd9;
+    --washed-pink: #E6E3F6;
+    --green : #BCD7C6;
+    --green : #b7e9c9;
+    --small-shadow:  2px 2px 3px rgba(0, 0, 0, 20%);
+}
+
+
+
+html,body{
+    background-color: whitesmoke;
+    height:100vh;
+    width:100vw;
+}
+
+#title{
+    font-family: 'Birthstone', cursive;
+    font-size: clamp(10px,5rem,150px); 
+    background-color: whitesmoke;
+    padding: 0 15px 0 15px;
+    border-radius: 50px;
+    transition-duration: .6s;
+    cursor:auto;
+    user-select: none;
+    color:var(--dark-pink)
+}
+
+#title:hover{
+    transform: scale(1.02);
+    box-shadow: var(--small-shadow);
+}
+
+.button{
+    /* background-color: #D6B9EF; */
+    background-color: #39aac4a6;
+}
+
+button{
+    box-shadow: var(--small-shadow);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 1px 8px;
+    margin:2px;
+    transition-duration: .4s;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+button:active{
+    box-shadow: inset var(--small-shadow);
+    transform: scale(1.05);
+}
+
+input{
+    border-width: 0ch;
+    outline: none;
+    box-shadow: var(--small-shadow);
+    transition-duration: .5s;
+    border-radius: 15px;
+    /* background-color: #a4dbef80;     */
+    background-color: #39b5c469;
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo{
+    background-color: var(--green);
+    border-radius: 15px;
+    width:clamp(288px,40vw,600px);
+    min-height:40px;
+    word-break: break-word;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    font-size: clamp(12px,2vw,20px);
+}
+
+.x-button{
+    top:0;
+    bottom:0;
+    right:-3rem;
+    min-width: 31.8px;
+    background-color: var(--beige);
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, 70%)
+}
+
+.cat_btn{
+    background-color: var(--beige);
+    color: rgba(0, 0, 0, 70%)
+}
